@@ -7,7 +7,7 @@ pipeline {
             }
             post {
                 success {
-                    echo 'Now Archiving...Webhook'
+                    echo 'Now Archiving...Webhook-Git Scm Polling'
                     archiveArtifacts artifacts: '**/target/*.war'
                 }
             }
