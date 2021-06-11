@@ -7,7 +7,7 @@ pipeline {
             }
             post {
                 success {
-                    echo 'Now Archiving...'
+                    echo 'Now Archiving...Webhook'
                     archiveArtifacts artifacts: '**/target/*.war'
                 }
             }
